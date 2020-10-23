@@ -1,0 +1,16 @@
+d:\Programacion Web\Pulsaciones - Web\Entity\bin\Debug\netstandard2.0\Entity.deps.json
+d:\Programacion Web\Pulsaciones - Web\Entity\bin\Debug\netstandard2.0\Entity.dll
+d:\Programacion Web\Pulsaciones - Web\Entity\bin\Debug\netstandard2.0\Entity.pdb
+d:\Programacion Web\Pulsaciones - Web\Entity\obj\Debug\netstandard2.0\Entity.csprojAssemblyReference.cache
+d:\Programacion Web\Pulsaciones - Web\Entity\obj\Debug\netstandard2.0\Entity.AssemblyInfoInputs.cache
+d:\Programacion Web\Pulsaciones - Web\Entity\obj\Debug\netstandard2.0\Entity.AssemblyInfo.cs
+d:\Programacion Web\Pulsaciones - Web\Entity\obj\Debug\netstandard2.0\Entity.dll
+d:\Programacion Web\Pulsaciones - Web\Entity\obj\Debug\netstandard2.0\Entity.pdb
+D:\Programacion Web\pulsation-web-ORM\Entity\bin\Debug\netstandard2.0\Entity.deps.json
+D:\Programacion Web\pulsation-web-ORM\Entity\bin\Debug\netstandard2.0\Entity.dll
+D:\Programacion Web\pulsation-web-ORM\Entity\bin\Debug\netstandard2.0\Entity.pdb
+D:\Programacion Web\pulsation-web-ORM\Entity\obj\Debug\netstandard2.0\Entity.csprojAssemblyReference.cache
+D:\Programacion Web\pulsation-web-ORM\Entity\obj\Debug\netstandard2.0\Entity.AssemblyInfoInputs.cache
+D:\Programacion Web\pulsation-web-ORM\Entity\obj\Debug\netstandard2.0\Entity.AssemblyInfo.cs
+D:\Programacion Web\pulsation-web-ORM\Entity\obj\Debug\netstandard2.0\Entity.dll
+D:\Programacion Web\pulsation-web-ORM\Entity\obj\Debug\netstandard2.0\Entity.pdb

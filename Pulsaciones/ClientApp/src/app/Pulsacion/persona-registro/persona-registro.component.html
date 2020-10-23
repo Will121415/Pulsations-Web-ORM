@@ -1,0 +1,47 @@
+<div class="container my-3">
+    <h2>Registrar person</h2>
+    <p>Registra una <code> person </code> para calcular su pulsacion..!</p>
+    <form action="/action_page.php">
+     
+        <div class="form-group">
+        <label for="identification">Identificacion:</label>
+        <input type="text" class="form-control" id="identification" placeholder="Introduzca identificacion"
+        name="identification" [(ngModel)] = "person.identification" required>
+      </div>
+
+      <div class="form-group">
+        <label for="name">Nombre:</label>
+        <input type="text" class="form-control" id="name" placeholder="Introduzca nombre" 
+        name="name" [(ngModel)] = "person.name" required>
+      </div>
+      
+      
+      <div class="form-group"> 
+        <label for="sex">Sexo:</label>
+            <select class="form-control" id="sex" name="sex" [(ngModel)] = "person.sex">
+                <option>M</option>
+                <option>F</option>
+              </select>
+      </div>
+      
+      <div class="form-group">
+        <label for="age">Edad:</label>
+        <input type="number" class="form-control" id="age" placeholder="Introduzca edad" 
+        name="age" [(ngModel)] = "person.age" required>
+      </div>
+      
+
+      <div class="my-3">
+        <label for="pulsation"><strong>Pulsacion: {{person.pulsation}}</strong></label>
+      </div>
+      
+      <div class="form-group">
+        <button type="submit" class="btn btn-primary" (click)="add()">Guardar</button>
+      </div>
+    </form>
+  </div>
+  
+  
+        <div class="col-sm-4">
+            
+         <div>
