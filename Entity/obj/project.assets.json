@@ -284,11 +284,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "d:\\Programacion Web\\pulsation-web-ORM\\Entity\\Entity.csproj",
+      "projectUniqueName": "D:\\Programacion Web\\pulsation-web-ORM\\Entity\\Entity.csproj",
       "projectName": "Entity",
-      "projectPath": "d:\\Programacion Web\\pulsation-web-ORM\\Entity\\Entity.csproj",
+      "projectPath": "D:\\Programacion Web\\pulsation-web-ORM\\Entity\\Entity.csproj",
       "packagesPath": "C:\\Users\\LENOVO-PC\\.nuget\\packages\\",
-      "outputPath": "d:\\Programacion Web\\pulsation-web-ORM\\Entity\\obj\\",
+      "outputPath": "D:\\Programacion Web\\pulsation-web-ORM\\Entity\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\LENOVO-PC\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -336,7 +336,7 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.0.100\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.403\\RuntimeIdentifierGraph.json"
       }
     }
   }

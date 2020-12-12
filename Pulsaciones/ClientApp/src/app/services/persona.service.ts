@@ -13,14 +13,14 @@ import { tap, catchError } from 'rxjs/operators';
 export class PersonaService {
 
   baseUrl: string;
-  constructor(private http: HttpClient,@Inject('BASE_URL') baseUrl: string, private handleErrorService: HandleHttpErrorService)
-  {
+  constructor(
+    private http: HttpClient,
+    @Inject('BASE_URL') baseUrl: string,
+    private handleErrorService: HandleHttpErrorService) {
       this.baseUrl = baseUrl;
   }
-  
 
-  get(): Observable<Person[]> 
-  {
+  get(): Observable<Person[]> {
     return this.http.get<Person[]>(this.baseUrl + 'api/Person').
       pipe(tap(_ => this.handleErrorService.log('datos consultados')),
       catchError(this.handleErrorService.handleError<Person[]>('Consultar Persona', null))
@@ -28,7 +28,7 @@ export class PersonaService {
   }
 
   post(person: Person): Observable<Person> {
-    return this.http.post<Person>(this.baseUrl + 'api/Person',person)
+    return this.http.post<Person>(this.baseUrl + 'api/Person', person)
            .pipe(tap(_ => this.handleErrorService.log('datos enviados')),
             catchError(this.handleErrorService.handleError<Person>('Registra Persona', null))
  );
@@ -40,10 +40,9 @@ export class PersonaService {
   catchError(this.handleErrorService.handleError<Person>('Eliminar Persona', new Person()))
   );
 }
- modify(person: Person): Observable<Person>
- {
-   return this.http.put<Person>(this.baseUrl + 'api/Person',person)
-   .pipe(tap(_=> this.handleErrorService.log('datos actualizados')),
+ modify(person: Person): Observable<Person> {
+   return this.http.put<Person>(this.baseUrl + 'api/Person', person)
+   .pipe(tap(_ => this.handleErrorService.log('datos actualizados')),
    catchError(this.handleErrorService.handleError<Person>('Modificar Persona', new Person()))
    );
  }

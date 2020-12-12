@@ -1,33 +1,50 @@
 <div class="container my-3">
     <h2>Registrar person</h2>
     <p>Registra una <code> person </code> para calcular su pulsacion..!</p>
-    <form action="/action_page.php">
+    <form [formGroup] = "formGroup">
      
         <div class="form-group">
         <label for="identification">Identificacion:</label>
         <input type="text" class="form-control" id="identification" placeholder="Introduzca identificacion"
-        name="identification" [(ngModel)] = "person.identification" required>
+        name="identification" formControlName = "identification" [ngClass]="{'is-invalid': control.identification.errors}">
+        <div *ngIf="control.identification.errors" class="invalid-feedback">
+          <div *ngIf="control.identification.errors.required">se requiere la identificacion</div>
+       </div>
       </div>
 
       <div class="form-group">
         <label for="name">Nombre:</label>
         <input type="text" class="form-control" id="name" placeholder="Introduzca nombre" 
-        name="name" [(ngModel)] = "person.name" required>
+        name="name" formControlName = "name" [ngClass]="{'is-invalid':  control.name.errors}">  
+
+        <div *ngIf="control.name.errors" class="invalid-feedback">
+            <div *ngIf="control.name.errors.required">se requiere el nombre</div>
+        </div>
       </div>
       
       
       <div class="form-group"> 
         <label for="sex">Sexo:</label>
-            <select class="form-control" id="sex" name="sex" [(ngModel)] = "person.sex">
-                <option>M</option>
-                <option>F</option>
-              </select>
+            <select class="custom-select" id="sex" name="sex" placeholder="Introduzca nombre"  formControlName = "sex"
+                    [ngClass]="{'is-invalid':  control.sex.errors}">
+              <option selected>seleccionar...</option>    
+              <option>M</option>
+              <option>F</option>
+            </select>
+
+            <div *ngIf="control.sex.errors" class="invalid-feedback">
+              <div *ngIf="control.sex.errors.validSexo">{{control.sex.errors.messageSexo}}</div>
+          </div>
       </div>
-      
+
       <div class="form-group">
         <label for="age">Edad:</label>
-        <input type="number" class="form-control" id="age" placeholder="Introduzca edad" 
-        name="age" [(ngModel)] = "person.age" required>
+        <input type="number" class="form-control" id="age" 
+        name="age" formControlName = "age" [ngClass]="{'is-invalid': control.age.errors}">
+
+        <div *ngIf="control.age.errors" class="invalid-feedback">
+          <div *ngIf="control.age.errors.required">se requiere la edad</div>
+        </div>
       </div>
       
 
@@ -36,12 +53,15 @@
       </div>
       
       <div class="form-group">
-        <button type="submit" class="btn btn-primary" (click)="add()">Guardar</button>
+        <button type="submit" class="btn btn-primary" (click)="onSubmit()" [disabled] ="formGroup.invalid">Guardar</button>
+      </div>
+
+      <div *ngIf="alert.save"  class="alert alert-success alert-dismissible fade show" role="alert">
+        <strong>Proceso Exitoso!, </strong> {{alert.message}}
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
       </div>
     </form>
   </div>
   
-  
-        <div class="col-sm-4">
-            
-         <div>

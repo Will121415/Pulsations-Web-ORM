@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "6M4TGXL9jmliyVp+9h/209CUQLv5I8UToVB0FT59eUEEnj8frXSjyfLvVAJg6yc62ZJdeV7HgTfW585tXIbD9A==",
+  "success": true,
+  "projectFilePath": "D:\\Programacion Web\\pulsation-web-ORM\\Entity\\Entity.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\LENOVO-PC\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\LENOVO-PC\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",
+    "C:\\Users\\LENOVO-PC\\.nuget\\packages\\system.componentmodel.annotations\\4.7.0\\system.componentmodel.annotations.4.7.0.nupkg.sha512"
+  ],
+  "logs": []
+}

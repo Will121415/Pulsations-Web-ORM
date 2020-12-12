@@ -7,6 +7,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using Pulsaciones.Hubs;
 
 namespace Pulsaciones
 {
@@ -25,6 +26,8 @@ namespace Pulsaciones
             // Configurar cadena de Conexion con EF
             var connectionString = Configuration.GetConnectionString("DefaultConnection");
             services.AddDbContext<PulsationsContext>(p=>p.UseSqlServer(connectionString));
+            // SignalR
+            services.AddSignalR();
             
             services.AddControllersWithViews();
             // Register the Swagger generator, defining 1 or more Swagger documents
@@ -49,6 +52,7 @@ namespace Pulsaciones
                 // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
                 app.UseHsts();
             }
+            
 
             app.UseHttpsRedirection();
             app.UseStaticFiles();
@@ -68,12 +72,23 @@ namespace Pulsaciones
             });
 
             app.UseRouting();
+            
+            #region global cors policy activate Authentication/Authorization
+            app.UseCors(x => x
+                .AllowAnyOrigin()
+                .AllowAnyMethod()
+                .AllowAnyHeader());
+
+            app.UseAuthentication();
+            app.UseAuthorization();
+            #endregion 
 
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllerRoute(
                     name: "default",
                     pattern: "{controller}/{action=Index}/{id?}");
+                    endpoints.MapHub<SignalHub>("/signalHub");
             });
 
             app.UseSpa(spa =>

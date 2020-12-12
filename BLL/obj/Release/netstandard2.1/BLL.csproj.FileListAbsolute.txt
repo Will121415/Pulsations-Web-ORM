@@ -1,0 +1,14 @@
+D:\Programacion Web\pulsation-web-ORM\BLL\bin\Release\netstandard2.1\BLL.deps.json
+D:\Programacion Web\pulsation-web-ORM\BLL\bin\Release\netstandard2.1\BLL.dll
+D:\Programacion Web\pulsation-web-ORM\BLL\bin\Release\netstandard2.1\BLL.pdb
+D:\Programacion Web\pulsation-web-ORM\BLL\bin\Release\netstandard2.1\DAL.dll
+D:\Programacion Web\pulsation-web-ORM\BLL\bin\Release\netstandard2.1\Entity.dll
+D:\Programacion Web\pulsation-web-ORM\BLL\bin\Release\netstandard2.1\DAL.pdb
+D:\Programacion Web\pulsation-web-ORM\BLL\bin\Release\netstandard2.1\Entity.pdb
+D:\Programacion Web\pulsation-web-ORM\BLL\obj\Release\netstandard2.1\BLL.csprojAssemblyReference.cache
+D:\Programacion Web\pulsation-web-ORM\BLL\obj\Release\netstandard2.1\BLL.AssemblyInfoInputs.cache
+D:\Programacion Web\pulsation-web-ORM\BLL\obj\Release\netstandard2.1\BLL.AssemblyInfo.cs
+D:\Programacion Web\pulsation-web-ORM\BLL\obj\Release\netstandard2.1\BLL.csproj.CoreCompileInputs.cache
+D:\Programacion Web\pulsation-web-ORM\BLL\obj\Release\netstandard2.1\BLL.csproj.CopyComplete
+D:\Programacion Web\pulsation-web-ORM\BLL\obj\Release\netstandard2.1\BLL.dll
+D:\Programacion Web\pulsation-web-ORM\BLL\obj\Release\netstandard2.1\BLL.pdb

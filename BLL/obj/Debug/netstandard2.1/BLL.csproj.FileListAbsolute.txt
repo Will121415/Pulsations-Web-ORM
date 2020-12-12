@@ -11,3 +11,4 @@ D:\Programacion Web\pulsation-web-ORM\BLL\obj\Debug\netstandard2.1\BLL.AssemblyI
 D:\Programacion Web\pulsation-web-ORM\BLL\obj\Debug\netstandard2.1\BLL.csproj.CopyComplete
 D:\Programacion Web\pulsation-web-ORM\BLL\obj\Debug\netstandard2.1\BLL.dll
 D:\Programacion Web\pulsation-web-ORM\BLL\obj\Debug\netstandard2.1\BLL.pdb
+D:\Programacion Web\pulsation-web-ORM\BLL\obj\Debug\netstandard2.1\BLL.csproj.CoreCompileInputs.cache

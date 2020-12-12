@@ -7,29 +7,36 @@ using System.Collections.Generic;
 using System.Linq;
 using System;
 using DAL;
+using System.Threading.Tasks;
+using Microsoft.AspNetCore.SignalR;
+using Pulsaciones.Hubs;
 
- 
 namespace Pulsaciones.Controllers
 {
     [Route("api/[controller]")]  // api/Persona
     [ApiController]
     public class PersonController: ControllerBase
     {
+        private readonly IHubContext<SignalHub> _hubContext;
         private readonly PersonService personService;
-        public PersonController(PulsationsContext context)
+        public PersonController(PulsationsContext context, IHubContext<SignalHub> hubContext)
         {
             personService = new PersonService(context);
+            _hubContext = hubContext;
         }
 
         // POST: api/Person
         [HttpPost]
-        public ActionResult<PersonViewModel> Save(PersonInputModel personInput)
+        public async Task<ActionResult<PersonViewModel>> Save(PersonInputModel personInput)
         {   
             Person person = MapPerson(personInput);
-            ServiceResponse  response = personService.Save(person);
+            ServiceResponse  response =  personService.Save(person);
 
             if(response.Error) return BadRequest(response.Message);
-            return Ok(response.Person);
+
+            var personViewModel = new PersonViewModel(response.Person);
+            await _hubContext.Clients.All.SendAsync("PersonaRegistrada", personViewModel);
+            return Ok(personViewModel);
 
         }
 

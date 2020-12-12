@@ -9,3 +9,4 @@ D:\Programacion Web\pulsation-web-ORM\DAL\obj\Debug\netstandard2.1\DAL.AssemblyI
 D:\Programacion Web\pulsation-web-ORM\DAL\obj\Debug\netstandard2.1\DAL.csproj.CopyComplete
 D:\Programacion Web\pulsation-web-ORM\DAL\obj\Debug\netstandard2.1\DAL.dll
 D:\Programacion Web\pulsation-web-ORM\DAL\obj\Debug\netstandard2.1\DAL.pdb
+D:\Programacion Web\pulsation-web-ORM\DAL\obj\Debug\netstandard2.1\DAL.csproj.CoreCompileInputs.cache

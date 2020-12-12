@@ -1,0 +1,9 @@
+D:\Programacion Web\pulsation-web-ORM\Entity\bin\Release\netstandard2.0\Entity.deps.json
+D:\Programacion Web\pulsation-web-ORM\Entity\bin\Release\netstandard2.0\Entity.dll
+D:\Programacion Web\pulsation-web-ORM\Entity\bin\Release\netstandard2.0\Entity.pdb
+D:\Programacion Web\pulsation-web-ORM\Entity\obj\Release\netstandard2.0\Entity.csprojAssemblyReference.cache
+D:\Programacion Web\pulsation-web-ORM\Entity\obj\Release\netstandard2.0\Entity.AssemblyInfoInputs.cache
+D:\Programacion Web\pulsation-web-ORM\Entity\obj\Release\netstandard2.0\Entity.AssemblyInfo.cs
+D:\Programacion Web\pulsation-web-ORM\Entity\obj\Release\netstandard2.0\Entity.csproj.CoreCompileInputs.cache
+D:\Programacion Web\pulsation-web-ORM\Entity\obj\Release\netstandard2.0\Entity.dll
+D:\Programacion Web\pulsation-web-ORM\Entity\obj\Release\netstandard2.0\Entity.pdb

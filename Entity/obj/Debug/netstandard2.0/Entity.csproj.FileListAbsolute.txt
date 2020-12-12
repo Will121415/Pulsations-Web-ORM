@@ -14,3 +14,4 @@ D:\Programacion Web\pulsation-web-ORM\Entity\obj\Debug\netstandard2.0\Entity.Ass
 D:\Programacion Web\pulsation-web-ORM\Entity\obj\Debug\netstandard2.0\Entity.AssemblyInfo.cs
 D:\Programacion Web\pulsation-web-ORM\Entity\obj\Debug\netstandard2.0\Entity.dll
 D:\Programacion Web\pulsation-web-ORM\Entity\obj\Debug\netstandard2.0\Entity.pdb
+D:\Programacion Web\pulsation-web-ORM\Entity\obj\Debug\netstandard2.0\Entity.csproj.CoreCompileInputs.cache

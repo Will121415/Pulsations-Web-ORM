@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule} from '@angular/forms';
 import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 
 
@@ -12,6 +12,8 @@ import { PersonaRegistroComponent } from './Pulsacion/persona-registro/persona-r
 import { AppRoutingModule } from './app-routing.module';
 import { PersonaService } from './services/persona.service';
 import { FooterComponent } from './footer/footer.component';
+import { FilterPersonPipe } from './pipe/filter-person.pipe';
+import { SignalRService } from './services/signal-r.service';
 
 @NgModule({
   declarations: [
@@ -22,14 +24,16 @@ import { FooterComponent } from './footer/footer.component';
     PersonaConsultaComponent,
     PersonaRegistroComponent,
     FooterComponent,
+    FilterPersonPipe,
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'ng-cli-universal' }),
     HttpClientModule,
     FormsModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ReactiveFormsModule
   ],
-  providers: [PersonaService],
+  providers: [PersonaService, SignalRService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

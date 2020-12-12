@@ -1,7 +1,11 @@
 <div class="container">
     <h2>Consultar persons</h2>
     <p>Consulta la lista de <code> persons </code> que se encuentran registradas...!</p>
-    <button class="btn btn-dark btn-lg btn-block mb-3" (click)="consult()">Consultar</button>
+    <!-- <button class="btn btn-dark btn-lg btn-block mb-3" (click)="consult()">Consultar</button> -->
+    <a class="navbar-brand mb-3">
+      <input class="form-control mx-5" type="search" name="searchText" [(ngModel)] = "searchText" placeholder="Filter" aria-label="Search">
+    </a>
+    
     <table class="table">
       <thead class="thead-dark">
         <tr>
@@ -16,7 +20,7 @@
         </tr>
       </thead>
       <tbody>
-        <tr *ngFor="let person of persons; index as i ">
+        <tr *ngFor="let person of persons|filterPerson: searchText; index as i">
             <th scope="row">{{ i + 1 }}</th>
             <td>{{ person.identification }} </td>
             <td>{{ person.name }}</td>
@@ -49,27 +53,27 @@
           <div class="modal-body">
             <form>
               <div class="form-group">
-                <label for="recipient-name" class="col-form-label">Identificacion:</label>
-                <input type="text" class="form-control"  id="recipient-name" name="identification" [(ngModel)]="person.identification" readonly disabled>
+                <label for="identification" class="col-form-label">Identificacion:</label>
+                <input type="text" class="form-control"  id="identification" name="identification" [(ngModel)]="person.identification" readonly disabled>
               </div>
               <div class="form-group">
-                <label for="recipient-name" class="col-form-label">Nombre</label>
-                <input type="text" class="form-control" id="recipient-name" name="name" [(ngModel)] = "person.name">
+                <label for="name" class="col-form-label">Nombre</label>
+                <input type="text" class="form-control" id="name" name="name" [(ngModel)] = "person.name">
               </div>
               <div class="form-group">
-                <label for="recipient-name" class="col-form-label">Edad:</label>
-                <input type="number" class="form-control" id="recipient-name" name="age" [(ngModel)] = "person.age">
+                <label for="age" class="col-form-label">Edad:</label>
+                <input type="number" class="form-control" id="age" name="age" [(ngModel)] = "person.age">
               </div>
               <div class="form-group">
-                <label for="recipient-name" class="col-form-label">Sexo:</label>
+                <label for="sex" class="col-form-label">Sexo:</label>
                 <select class="form-control" id="sex" name="sex" [(ngModel)] = "person.sex">
                   <option>M</option>
                   <option>F</option>
                 </select>
               </div>
               <div class="form-group">
-                <label for="recipient-name" class="col-form-label">Pulsaciones:</label>
-                <input type="text" class="form-control"  id="recipient-name" name="pulsatiob" [(ngModel)] = "person.pulsation"  readonly disabled>
+                <label for="pulsation" class="col-form-label">Pulsaciones:</label>
+                <input type="text" class="form-control"  id="pulsation" name="pulsation" [(ngModel)] = "person.pulsation"  readonly disabled>
               </div>
             </form>
           </div>
